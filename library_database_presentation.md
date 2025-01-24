@@ -139,4 +139,4 @@ df.to_excel("output.xlsx", index=False)
 
 - **The slicers allow you to see the names of the users who's library cards will expire in what month**
 
-![Pivot_Data](Pivot_Data_.jpg)
+![Pivot_Data](Pivot_Data.jpg)
