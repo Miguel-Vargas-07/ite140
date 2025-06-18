@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Library Database</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="ITE140.html">ITE140</a></li>
+            <li><a href="ITE152.html">ITE152</a></li>
+            <li><a href="ITD256.html">ITD256</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h3>Library Database</h3>
+    <h3>Goal</h3>
+    - create a library database<br>
+    - create a view<br>
+    - create a pivot table & pivot chart using the view
+    <h3>Purpose</h3>
+    The purpose of creating and selecting portions of a database to 
+    be filtered out is to store all data, and to be able to quickly 
+    answer questions about the data inside the database that
+    are asked most frequently.
+    
+    <h3>ER Diagram</h3> 
+
+    - This diagram represents 6 entities(tables),  including one join table<br>
+    - The book_author table serves as a joint between the book and author in order
+     to maintain <a href = "database_normalization.html">normal form</a> in the 
+     event that a book has mutliple authors or vice versa.<br><br>
+
+     <div style="text-align: center;">
+     <img src = "../images/library_ER_Diagram copy.jpg" alt = "library ER diagram" style = "width:60%;" style = "display: block;"><br><br>
+     </div>
+
+
+     Once I completed the ER diagram, I wrote the code to create the new tables, 
+     <a href = "https://github.com/Miguel-Vargas-07/ite140/blob/main/create_tables_library.sql">Click here</a> to see this code in my repo.<br>
+    
+    <h3>Mock Data</h3>
+
+    After creating all of the tables, the next step is to insert some data in order to be able to manipulate the database. 
+    For this, I used <a href = "https://www.mockaroo.com/">mockaroo</a> to create a bunch of "insert into" statements that
+    would fill the tables with values in order to run queries on the tables. 
+    Here is a snippet of what those insert statements would look like<br><br>
+
+  
+    <h3>View</h3>
+    
+    With the mock data, I can now create a view. A <a href = "https://en.wikipedia.org/wiki/View_(SQL)">view</a> 
+    is a pre selected filter that creates a table with 
+    filtered values. The view that I chose to make is one that grabs the expiration date of a library card alongside the user info relevant to 
+    that card. I chose this because I believe it would be in the best interest of the library to notify the users that they must renew their card in 
+    order to keep the community happy. Views like this allow for improtant data like this to not just be stored in a table, but to 
+    be readily accessible to whomever needs to access it. <br><br>
+
+    <div style="text-align: center;">
+    <img src = "../images/View_table_terminal copy.jpg" alt = "view table" style = "width:65%;"><br><br>
+    </div>
+
+    <h3>Python Script</h3>
+    
+    Now that I created my database and made a view to go along with it, the next thing to do is play 
+    with the view in Excel. In order to do this, I used <a href = "https://pandas.pydata.org/">Pandas</a> and 
+    PowerQuery to make a live connection between my database and an excel sheet. The pandas extension allows me to import my 
+    database, while PowerQuery gives excel access to the document. <br><br>
+
+
+    <h3>Excel</h3>
+
+    Once the view was imported into excel, I made a pivot table and pivot chart to further analyze the selected data. 
+    This illustrated and further clarified what the data in the view meant. This pivot chart takes the library cards and 
+    who they belong to from the view, and shows that from that pool of library cards, which ones are set to expire by 2026. 
+    This can be very useful becasue it would allow the library to send out reminders to the users whom need to revalidate their library
+    card soon. <br><br>
+    
+    <div style = "text-align: center;">
+    <img src = "../images/Pivot_Data copy.jpg" alt = "pivot data" style = "width:65%;"><br><br>
+    </div>
+
+    <h3>Takeaway</h3>
+
+    The main purpose of this project was to design, create, customize, export, and analyze a database meant for a library. This project showed 
+    many aspects of a database, and how it is not just a place to store data. A database is more capable than jsut that, it allows for analyses, 
+    organization, and efficient retrieval of information, making it a powerful tool for managing complex networks.
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+## 

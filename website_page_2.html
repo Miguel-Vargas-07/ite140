@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Database normalization project</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="ITE140.html">ITE140</a></li>
+            <li><a href="ITE152.html">ITE152</a></li>
+            <li><a href="ITD256.html">ITD256</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h3>Database Normalization project</h3>
+
+    <h3>Project Introduction</h3>
+    This project is meant to explore the concept of database normalization using <a
+        href="https://en.wikipedia.org/wiki/Database_normalization#Normal_forms">normal form</a>.
+    Normal form is tier of 7 levels that each has more specific rules a database should follow in order to be able to
+    say it is in normal form. This set of rules ensures that
+    the data in the table is well organized and ready for usage.
+
+    <h3>Sample table</h3>
+    The following table is the sample table that is not in normal form <br><br>
+
+    <div style = "text-align: center;">
+    <img src = "../images/original_table.jpg" alt = "original table" style="width:80%;"><br><br>
+    </div>
+
+    in order to make this table follow normnal form I had to first make two sub tables that would link back to the main 
+    table on one row called the <a href = "https://en.wikipedia.org/wiki/Primary_key">primary key</a>. The primary key is 
+    a row where each value is unique that allows for tables to cross reference each other. By making a sub table for customer 
+    and sale information, the table is now more organized and will not have repeating data. This is important in order to follow 
+    normal form because a rule in 1st normal form is that you must eliminate repeating groups.  <br><br>
+    
+    <h3>Sub Tables</h3>
+
+    <div style="text-align: center;">
+        <img src="../images/sub_table_items.jpg" alt="items sub table" style="width:40%; display: inline-block; margin-right: 10px;">
+        <img src="../images/sub_table_customerinfo.jpg" alt="customer sub table" style="width:40%; display: inline-block;">
+      </div><br><br>
+
+    By making both of these sub tables, the rows left from the original now follow normal form. This is because <br>there aren't
+     any repeating values, each row is unique, and the order of the rows doesn't matter. 
+
+    <h3>Final table</h3>
+
+    This final table and its sub tables follow normal form and are ready to handle real data.<br><br>
+    
+    <div style = "text-align: center;">
+    <img src = "../images/final_table.jpg" alt = "final table" style = "width:70%;"><br><br>
+    </div>
+
+    <h3>Takeaway</h3>     
+
+    The main purpose of this project was to properly set up and organize a database. This is important because if a database is unable to 
+    follow normal form, it will struggle or fail to add or remove data into its tables. By following normal form, a database is fully 
+    functioning and ready to be deployed and used by whomever, while it is also easy to read and manipulate.
+
+</body>
