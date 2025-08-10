@@ -1,1 +1,1 @@
-link to my assignment website - http://127.0.0.1:3000/index.html
+Hi! This is my github repo where I have kept and documented many of my assignments in ITE 140 (Spreadsheeting for business), ITD256(Advanced Database Management, and more related projects. 
